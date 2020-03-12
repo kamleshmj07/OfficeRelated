@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "4971c9f5-02d0-4e28-871a-ba3776d816ee",
+		"name": "Tamale API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tamale Entity GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entity/?outputformat=json",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entity",
+						""
+					],
+					"query": [
+						{
+							"key": "outputformat",
+							"value": "json"
+						},
+						{
+							"key": "expand",
+							"value": "entity-type;relationships;relationship;provider-mappings;provider;aliases;alias;topic-members;weblinks;relationship-type;valid-relationships;valid-relationship;member-list;officers;officer",
+							"disabled": true
+						},
+						{
+							"key": "filterby",
+							"value": "entity-type",
+							"disabled": true
+						},
+						{
+							"key": "filterstring",
+							"value": "Industry",
+							"disabled": true
+						},
+						{
+							"key": "rpp",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "advfilter",
+							"value": "(entity-type name equals \"Project\")",
+							"disabled": true
+						},
+						{
+							"key": "entity-type",
+							"value": "Industry",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entity/?outputformat=json&expand=entity-type;relationships;relationship;provider-mappings;provider;aliases;alias;topic-members;weblinks;relationship-type;valid-relationships;valid-relationship;member-list;officers;officer&rpp=200&page=1&advfilter=(entity-type name equals \"Project\")",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entity",
+						""
+					],
+					"query": [
+						{
+							"key": "outputformat",
+							"value": "json"
+						},
+						{
+							"key": "expand",
+							"value": "entity-type;relationships;relationship;provider-mappings;provider;aliases;alias;topic-members;weblinks;relationship-type;valid-relationships;valid-relationship;member-list;officers;officer"
+						},
+						{
+							"key": "filterby",
+							"value": "entity-type",
+							"disabled": true
+						},
+						{
+							"key": "filterstring",
+							"value": "Industry",
+							"disabled": true
+						},
+						{
+							"key": "rpp",
+							"value": "200"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "advfilter",
+							"value": "(entity-type name equals \"Project\")"
+						},
+						{
+							"key": "entity-type",
+							"value": "Industry",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale Entity-Type GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entity-type/?outputformat=xml",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entity-type",
+						""
+					],
+					"query": [
+						{
+							"key": "outputformat",
+							"value": "xml"
+						},
+						{
+							"key": "expand",
+							"value": "entity-type",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale Entry GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entry/?outputformat=json&expand=entry-type&entity=7974 JP&parentnotesonly=false&submitter=localIT",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entry",
+						""
+					],
+					"query": [
+						{
+							"key": "outputformat",
+							"value": "json"
+						},
+						{
+							"key": "expand",
+							"value": "entry-type"
+						},
+						{
+							"key": "entity",
+							"value": "7974 JP"
+						},
+						{
+							"key": "parentnotesonly",
+							"value": "false"
+						},
+						{
+							"key": "submitter",
+							"value": "localIT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale Entry POST HELLO WORLD",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entry/?entities=7974 JP&body=HELLO WORLD",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entry",
+						""
+					],
+					"query": [
+						{
+							"key": "outputformat",
+							"value": "xml",
+							"disabled": true
+						},
+						{
+							"key": "expand",
+							"value": "entry-type",
+							"disabled": true
+						},
+						{
+							"key": "entities",
+							"value": "7974 JP"
+						},
+						{
+							"key": "parentnotesonly",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "submitter",
+							"value": "Yitian Zhang",
+							"disabled": true
+						},
+						{
+							"key": "body",
+							"value": "HELLO WORLD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale Entry POST ATTACHMENT",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "attachment",
+							"type": "file",
+							"src": "Nintendo Test.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entry/?entities=7974 JP&outputformat=json",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entry",
+						""
+					],
+					"query": [
+						{
+							"key": "entities",
+							"value": "7974 JP"
+						},
+						{
+							"key": "outputformat",
+							"value": "json"
+						},
+						{
+							"key": "body",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "attachment",
+							"value": "C:\\Users\\kmanjrekar\\Downloads\\Nintendo Test.xlsx",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tamale Entry POST ATTACHMENT Text",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "l0calIT",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "localIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "attachment",
+							"type": "file",
+							"src": "test file.txt"
+						},
+						{
+							"key": "body",
+							"value": "Test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://seg-ct-tamaletest2/restapi/2.0/entry/?entities=7974 JP&outputformat=json",
+					"protocol": "https",
+					"host": [
+						"seg-ct-tamaletest2"
+					],
+					"path": [
+						"restapi",
+						"2.0",
+						"entry",
+						""
+					],
+					"query": [
+						{
+							"key": "entities",
+							"value": "7974 JP"
+						},
+						{
+							"key": "outputformat",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
