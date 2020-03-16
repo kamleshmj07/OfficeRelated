@@ -1,0 +1,16 @@
+from base64 import b64encode
+import requests
+b64login = b64encode(bytes('%s:%s' % ('DFXGGXDFDXFGGXDFANMIHSU', 'zdfg849dfg4g8xdfgsd418sdr')).encode('utf-8'))
+requests.get("https://api.msci.com/esg/report/v1.0/reports/esgRatingsReport/ IID000000002143620", headers={
+"Authorization": "Basic %s" % b64login })
+
+
+
+
+import requests url = "https://api.msci.com/esg/report/v1.0/reports/"; 
+
+headers = { } 
+
+response = requests.request("POST", url, headers=headers) 
+
+print(response.text)
