@@ -1,0 +1,225 @@
+0128228D _PRVT
+0175984D _PRVT
+0201173Z _PRVT
+0225249D _PRVT
+0226226D _ACQRD
+0338529Z _PRVT
+2638187Z LN _PRVT
+2810708ZLN _PRVT
+2957032Z _ACQRD
+3122066Q _ACQRD
+3199835Z _PRVT
+3580Q _ACQRD
+552330Z _ACQRD
+562 HK _ACQRD
+6764 JP _ACQRD
+735433Q _ACQRD
+800805Q _ACQRD
+86634Z _PRVT
+ABI _ACQRD
+AD _DLST
+AGI _DLST
+Ameripath _ACQRD
+AOT _ACQRD
+ASD _DLST
+AVYA _ACQRD
+Barra _ACQRD
+BAYER _DLST
+BFAM _ACQRD
+BGP _DLST
+BJIC _ACQRD
+BMMI _DLST
+BMP _ACQRD
+BSG _ACQRD
+Cendant Corp _PRVT
+CWC _DLST
+Dow Jones _ACQRD
+EGL _ACQRD
+FFTIQ _DLST
+GBL _PRVT
+Genentech _ACQRD
+Gray Communications _PRVT
+Hotels.com _PRVT
+HSB Group _ACQRD
+ICN Biomedicals _ACQRD
+Inter-Tel _ACQRD
+Intergraph _PRVT
+IPOP _PRVT
+JAVA _ACQRD
+Jean Philippe _PRVT
+K&F _ACQRD
+KIDD _ACQRD
+Kollmorgen _ACQRD
+Linens n Things _ACQRD
+Liquidnet _PRVT
+LLACU _DLST
+Lone Star Steakhouse _PRVT
+Longs Drugs _ACQRD
+Macneal-Schwendler _PRVT
+Magna _DLST
+Marshall & Isley _ACQRD
+Martek Biosciences _ACQRD
+Matria Healthcare _ACQRD
+Maxwellshoe _PRVT
+Maytag Corp _ACQRD
+MCH _DLST
+Mediacom_DLST
+Mercantile Bankshares _PRVT
+Metal Management _ACQRD
+Metro Media Networks _ACQRD
+MGI Pharma_PRVT
+Mode Tour_PRVT
+Molecular Devices_PRVT
+MOO _DLST
+MRLL _DLST
+Multex _PRVT
+Munich RE _PRVT
+National Data Corp _PRVT
+NDN _ACQRD
+NetOne _PRVT
+Neuberger Berman _PRVT
+Nilson Report _PRVT
+Nine West_ACQRD
+NN Ball & Roller _PRVT
+Nordic Windpower _PRVT
+Norrell _ACQRD
+Novametrix Medical Systems _ACQRD
+Nuveen _PRVT
+Nvest _DLST
+NYK Lines _PRVT
+Nymex _ACQRD
+Nymex _ACQRD
+OAKS _DLST
+Octel _ACQRD
+Ocular Sciences_ACQRD
+Open Solutions _ACQRD
+Osmonics _ACQRD
+Pacific Scientific _ACQRD
+PARK OHIO _PRVT
+Parkway Health _PRVT
+Paxar _ACQRD
+Peak Technologies _PRVT
+Pegasus _PRVT
+Penn America _ACQRD
+Pentacon _PRVT
+Peoplesoft _ACQRD
+Perot Systems _ACQRD
+Phelps Dodge _PRVT
+Pittson Brinks _ACQRD
+PLH _ACQRD
+Premier Parks _DLST
+Premier Radio _PRVT
+Primark _PRVT
+Private Bancorp _PRVT
+Production Operators Corp _ACQRD
+Profarma _PRVT
+Profit Recovery _PRVT
+Progroup _PRVT
+Proquest _PRVT
+Psychiatric Solutions _ACQRD
+Quest Education Corp _ACQRD
+Quintiles Inc _PRVT
+RADS _ACQRD
+Rainbow Media Group _DLST
+RARE _ACQRD
+RAUT _ACQRD
+RAWL _ACQRD
+RAYM _ACQRD
+RAZF _ACQRD
+RCI _ACQRD
+RCOTQ _DLST
+RDB _DLST
+RDK _ACQRD
+Realogy Corporation _ACQRD
+Reeds Jewelers _ACQRD
+Regional Acceptance Corp. _ACQRD
+REIN _ACQRD
+RESP _ACQRD
+Rexene _DLST
+REY _ACQRD
+RGFCQ _DLST
+RHB _ACQRD
+RHDCQ _DLST
+RIDL _PRVT
+RISC _ACQRD
+RISK _ACQRD
+RLRN _ACQRD
+RMCI _ACQRD
+RMED _DLST
+RMI _ACQRD
+RMR _PRVT
+RMR _PRVT
+RNBO _ACQRD
+ROAC _ACQRD
+Rochester Gas & Electric Corp. _DLST
+ROH _ACQRD
+Room & Board Inc. _PRVT
+ROTO _ACQRD
+Royal Appliance Manufacturing Co. _ACQRD
+Royal Plastics Inc. _PRVT
+RSAS _ACQRD
+RSTO _ACQRD
+RTEX _ACQRD
+RTSX _ACQRD
+RTWI _ACQRD
+RURL _ACQRD
+RVSI _DLST
+RVWD _ACQRD
+RYAN _ACQRD
+SAY _DLST
+SCTT _ACQRD
+SDS _ACQRD
+SEC _ACQRD
+SERO _ACQRD
+SFN _ACQRD
+SFSK _ACQRD
+Shake Shack _PRVT
+SHED _ACQRD
+Silicon Valley Bank _PRVT
+Simulation Sciences Inc. _ACQRD
+SIRV _DLST
+Sistema Educacional Brasileiro _PRVT
+SKIL _ACQRD
+SLMD _ACQRD
+Smile Brands Inc. _PRVT
+SNKR GR _ACQRD
+SNTC _ACQRD
+Sola International Inc. _ACQRD
+SONO _ACQRD
+SPSS _ACQRD
+STIM _ACQRD
+STIZ _ACQRD
+STU _ACQRD
+Sunrise Medical Inc. _ACQRD
+SWP CN _ACQRD
+SWW _ACQRD
+SYD _ACQRD
+TALX _ACQRD
+TBP _ACQRD
+TBWC _ACQRD
+TCNL _ACQRD
+TCSMCZ KS _PRVT
+TEAM _ACQRD
+Tech-Sym Corporation _ACQRD
+Texas Regional Bank _PRVT
+THMC _DLST
+TKS _ACQRD
+TNC_ACQRD
+TNM _ACQRD
+TOPP _ACQRD
+Trammell Crow Co. _ACQRD
+TRDT _DLST
+TSA _ACQRD
+TSG _ACQRD
+TSTY _ACQRD
+TSTY _ACQRD
+United Health Group _PRVT
+UVN _ACQRD
+VARS _ACQRD
+VELCF _ACQRD
+VTX _ACQRD
+VWR INTERNATIONAL LTD _PRVT
+WB _ACQRD
+Westwood One _PRVT
+YCC _ACQRD
+YRKG _ACQRD

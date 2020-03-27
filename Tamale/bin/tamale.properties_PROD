@@ -1,0 +1,101 @@
+#
+# tamale REST API script configuration file
+#
+tamale.hostname=seg-ny-tamale1
+tamale.port=443
+tamale.username=localIT
+tamale.password=l0calIT
+tamale.webprefix=https
+
+db.hostname=seg-ny-sql4
+db.driver={SQL Server}
+db.database_name=TamaleMarketData
+db.username=tamale
+db.password=t@mal3
+
+port_rec.log_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\log\\%d\\tamale_rec_data.pl.log
+
+# %d is substituted by YYYYMMDD
+entities.temp_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\tamale_entities.xml
+relationships.temp_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\tamale_relationships.xml
+
+bbg_tickers_file.field_delimiter=,
+
+port_rec.from_email=axysauto@selectequity.com
+port_rec.to_email=lharris@selectequity.com,rbaca@selectequity.com
+port_rec.cc_email=LogsTamale@selectequity.com
+port_rec.mail_ex=exmail.seg.local
+
+port_rec.exclusions_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\conf\\tamale_ticker_exclusions.txt
+
+secdetails.from_email=axysauto@selectequity.com
+secdetails.to_email=lharris@selectequity.com,rbaca@selectequity.com
+secdetails.cc_email=LogsTamale@selectequity.com
+secdetails.mail_ex=exmail.seg.local
+
+secdetails.log_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\log\\%d\\tamale_rec_secdetails.pl.log
+secdetails.out_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\SecurityDetailsDifference.csv
+
+iss_extract.log_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\log\\%d\\tamale_ISS_extact.pl.log
+iss_extract.holdings_filename=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\holdings%d.txt
+
+iss_extract.sftp_hostname=sftp.issgovernance.com
+iss_extract.sftp_username=pas_8148seleq
+iss_extract.sftp_password=62p68uhDY
+
+iss_extract.remoteproxyfile=/reports/ISSProxyResearch_%d.txt
+iss_extract.remoteproxyfile_local=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\remote_proxy_file.txt
+iss_extract.remotereport_path=/reports/
+iss_extract.localreport_path=\\\\seg-ny-fsdev\\f1\\prod\\Tamale\\work\\
+
+iss_extract.note_type=Proxy Review
+
+ports.list=firmwide,coopsqlg,coopsqst,grjones,partnerslg,partnersst,smid,vandam,sjpglobal,sjplarge,blackwall,ucits
+
+firmwide.dbname=@firmwide
+firmwide.side=both
+firmwide.name=SEG Firmwide Portfolio
+
+coopsqlg.dbname=coopsq
+coopsqlg.side=long
+coopsqlg.name=Cooper Square Long Portfolio
+
+coopsqst.dbname=coopsq
+coopsqst.side=short
+coopsqst.name=Cooper Square Short Portfolio
+
+grjones.dbname=@gsgrjone
+grjones.side=both
+grjones.name=Great Jones Portfolio
+
+partnerslg.dbname=@seghedge
+partnerslg.side=long
+partnerslg.name=SEG Partners Long Portfolio
+
+partnersst.dbname=@seghedge
+partnersst.side=short
+partnersst.name=SEG Partners Short Portfolio
+
+smid.dbname=@active
+smid.side=both
+smid.name=SMID Portfolio
+
+vandam.dbname=vandamlp
+vandam.side=both
+vandam.name=Vandam Portfolio
+
+sjpglobal.dbname=sjpall
+sjpglobal.side=both
+sjpglobal.name=SJP Global Portfolio
+
+sjplarge.dbname=sjplarge
+sjplarge.side=both
+sjplarge.name=SJP Large Cap Portfolio
+
+blackwall.dbname=@blackwal
+blackwall.side=both
+blackwall.name=Blackwall Portfolio
+
+ucits.dbname=UCITS
+ucits.side=both
+ucits.name=UCITS Portfolio
