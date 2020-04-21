@@ -4,3 +4,20 @@ join TamaleMarketData..MSCI_Rating_Master mas
 	on aud.segMSCIId = mas.segMSCIId
 where batchId = 1091 and isProcessed = 1
 
+
+select	 tam.Tamale_Symbol
+		,aud.securityIdentifier
+		,aud.securityName
+		,aud.tamaleUploadRC
+		,aud.tamaleUploadURL
+		,aud.errorMessage
+		,aud.asof_dt
+from TamaleMarketData..MSCI_ESG_Audit aud
+join BloombergMarketData..tamale_mkt_data tmkt
+	on tmkt.ID_BB_GLOBAL = aud.securityIdentifier
+join TamaleMarketData..tamaleFrontSheet tam
+	on tam.bloombergSymbol = tmkt.bbdl_req_identifier
+where batchId = 1091 
+and isProcessed = 0 
+and errorIn = 'Tamale'
+and tmkt.asof_dt = '2020-04-17'
