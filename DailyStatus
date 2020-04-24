@@ -1,3 +1,17 @@
+
+
+04/21:
+>> Move Wrapper code to libs
+>> Previous business date function call and testing
+>> Update SOI query and filter ACTV Market Status securities. Lookup the Delisted and Acquired in exception report (100% Match)
+>> Provide following queries for Alex
+	+ Tamale Shortname mismatch exception list query for further investigation
+	+ Successfull and failed securities overlay query
+
+
+
+
+04/20:
 >> Write and Run Negative testing test cases for TamaleWrapper
 >> Update SP parameters and sp code calling logic
 >> FIGI Id logic change and then Run and Exception analysis
