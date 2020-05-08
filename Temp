@@ -1,28 +1,29 @@
-1] File storing
-    + Drop files directly in work folder only during the latest run
-    + Send to archive folder (using utlity)
-    + Clean up the files once before process ends
-2] Move Id determination logic from python to SQL
-3] Enable line number in logging and take out redundant logging for ex : main|for loop
-4] Break the logic under main function into different calls
-5] Create a Audit table to track reprocessing Logic. This table should contains fields like URL, Response Code, Download File Path etc. apart from Security Identifier
-6] Make Change to MSCI_Rating_Master table like
-    Change the Datetime to Date for Rating_Date and _Previous_Rating_Date
-    Remove the Text Datatype and change it Varchar 8000
-    Make the Rating_Trend Data type to small
-    Add UserName Column and Default to SQL user Name
-    Add SEGMSCIId Column as Primary Key
-7] Change in SOI Query to get the records based on CS/SW/CF
-    also add lookupIdentfier and lookupType
+with 
+mkt_data_deduped as (
+       select
+       mkt_data.asof_dt,
+       -- bloomberg pulled data
+       bbdl_req_identifier, ID_BB_GLOBAL, ticker, EXCH_CODE, MARKET_SECTOR_DES, security_typ, MARKET_STATUS, NAME, ID_CUSIP, ID_SEDOL1, ID_ISIN,
+       -- soi for bloomberg pull
+       soi.source_system_security_id, soi.source_system,
+       ROW_NUMBER() over (
+                      partition by id_bb_global 
+                      order by
+                             case
+                                           when soi.source_system     = 'axys' then 1
+                                           when soi.source_system     = 'tamale' then 2
+                                           else 3
+                             end) as row_rnk
+       from BloombergMarketData..tamale_mkt_data mkt_data
+                      left outer join BloombergMarketData..dl_master_soi soi
+                             on mkt_data.bbdl_req_identifier = soi.bbgdl_id
+                                           and mkt_data.asof_dt = soi.asof_date
+                                           and soi.request_id = 'tamale'
 
-MSCIWrapper Comments :
-    + encrypt the keys and decrypt just like sftp
-    + eval take out
-    + json config
-    + rename __call_api
-    + retries configurable, retry logic for common type of errors and consider the authentication exception
-    + refactor the logging => formatter logging tutorial
-    + version url replacing
-    
-Unit Tests for Wrappers
-    + Basic unit test hardcode and active unit tests
+       where mkt_data.asof_dt = (select max(asof_dt) from BloombergMarketData..tamale_mkt_data)
+                      and SECURITY_TYP not in ('Equity Index')
+)
+select *
+from mkt_data_deduped
+where row_rnk = 1
+order by source_system, source_system_security_id
